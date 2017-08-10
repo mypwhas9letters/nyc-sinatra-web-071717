@@ -1,1 +1,3 @@
-<p><%=Figure.all.last.name%></p>
+<%Figure.all.each do |figure|%>
+<a href="figures/<%=figure.id%>"><%=figure.name %></a>
+<% end %>
